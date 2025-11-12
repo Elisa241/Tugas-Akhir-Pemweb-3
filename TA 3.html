@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PT. Smart Tech Indonesia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="font-sans bg-gray-50 text-gray-800 scroll-smooth">
+    <!-- HEADER -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+      <div
+        class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <h1 class="text-2xl font-extrabold text-cyan-700">
+            PT. Smart Tech Indonesia
+        </h1>
+        <nav class="hidden md:flex space-x-8 text-gray-700 font-medium">
+          <a href="#home" class="hover:text-cyan-700 transition">Beranda</a>
+          <a href="#features" class="hover:text-cyan-700 transition"
+            >Fasilitas</a
+          >
+          <a href="#about" class="hover:text-cyan-700 transition"
+            >Tentang Kami</a
+          >
+          <a href="#contact" class="hover:text-cyan-700 transition">Kontak</a>
+        </nav>
+        <button
+          id="menu-btn"
+          class="md:hidden p-2 text-gray-700 hover:text-cyan-700 focus:outline-none"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-7 w-7"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <!-- MENU -->
+      <div
+        id="mobile-menu"
+        class="hidden flex-col space-y-3 bg-gray-50 px-6 py-4 md:hidden"
+      >
+        <a href="#home" class="hover:text-cyan-700">Beranda</a>
+        <a href="#features" class="hover:text-cyan-700">Fasilitas</a>
+        <a href="#about" class="hover:text-cyan-700">Tentang Kami</a>
+        <a href="#contact" class="hover:text-cyan-700">Kontak</a>
+      </div>
+    </header>
+
+    <section
+  id="home"
+  class="relative bg-cover bg-center bg-no-repeat py-20 md:py-28 text-white"
+  style="background-image: url('images/tech.jpg');"
+>
+
+  <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+
+  <div class="relative max-w-5xl mx-auto text-center px-6">
+    <h2
+      class="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-4 leading-tight drop-shadow-lg"
+    >
+    Inovasi Teknologi untuk Masa Depan
+    </h2>
+    <p class="text-lg sm:text-xl text-gray-100 mb-8 drop-shadow-md">
+        <b>PT. Smart Tech Indonesia</b> menghadirkan solusi teknologi        untuk membantu perusahaan dan masyarakat menghadapi tantangan digital.
+        Dari pengembangan software hingga layanan cloud, kami fokus pada
+        inovasi yang aman, efisien, dan berdampak luas.
+      </p>
+    <a
+      href="#about"
+      class="bg-white text-cyan-700 font-semibold py-3 px-8 rounded-lg shadow-lg hover:bg-gray-100 transition"
+    >
+      Pelajari Selengkapnya
+    </a>
+  </div>
+</section>
+
+    <!-- FASILITAS -->
+    <section id="features" class="py-20 bg-white">
+      <div class="max-w-6xl mx-auto px-6 text-center">
+        <h3 class="text-3xl font-bold mb-12 text-gray-900">Fasilitas</h3>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+          <div
+            class="p-8 bg-cyan-100 rounded-2xl shadow hover:shadow-xl transition transform hover:-translate-y-1"
+          >
+            <div
+              class="w-16 h-16 mx-auto bg-cyan-600 rounded-full flex items-center justify-center mb-5"
+            >
+              <svg
+                class="w-8 h-8 text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 12l2-2m0 0l7-7 7 7m-9 2v8m4-8v8m5-4h3m-3 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+            </div>
+            <h4 class="text-xl font-semibold mb-3">R&D Center Modern</h4>
+            <p class="text-gray-600 leading-relaxed">
+                PT. Smart Tech Indonesia memiliki pusat riset dan pengembangan
+                modern untuk menciptakan teknologi inovatif, mulai dari AI, IoT,
+                hingga software enterprise.
+              </p>
+          </div>
+
+          <div
+            class="p-8 bg-cyan-100 rounded-2xl shadow hover:shadow-xl transition transform hover:-translate-y-1"
+          >
+            <div
+              class="w-16 h-16 mx-auto bg-blue-500 rounded-full flex items-center justify-center mb-5"
+            >
+              <svg
+                class="w-8 h-8 text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2H3V4zM3 8h18v12a1 1 0 01-1 1H4a1 1 0 01-1-1V8z"
+                />
+              </svg>
+            </div>
+            <h4 class="text-xl font-semibold mb-3">Fasilitas Lengkap</h4>
+            <p class="text-gray-600 leading-relaxed">
+                Fasilitas kami meliputi <b>lab AI & Big Data</b>, 
+          <b>cloud server berstandar internasional</b>, <b>co-working space</b>, 
+          <b>ruang konferensi digital</b>, dan <b>program pengembangan karyawan</b>.
+        </p>
+          </div>
+
+          <div
+            class="p-8 bg-cyan-100 rounded-2xl shadow hover:shadow-xl transition transform hover:-translate-y-1"
+          >
+            <div
+              class="w-16 h-16 mx-auto bg-sky-500 rounded-full flex items-center justify-center mb-5"
+            >
+              <svg
+                class="w-8 h-8 text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 8c-1.5 0-3 .5-4.2 1.5C6 11 6 13 6 15s0 4 1.8 5.5C9 22 10.5 22 12 22s3-.5 4.2-1.5C18 19 18 17 18 15s0-4-1.8-5.5C15 8.5 13.5 8 12 8z"
+                />
+              </svg>
+            </div>
+            <h4 class="text-xl font-semibold mb-3">Lingkungan Kerja Inovatif</h4>
+            <p class="text-gray-600 leading-relaxed">
+                Lingkungan kerja mendukung kolaborasi, kreativitas, dan inovasi
+                dengan sistem keamanan digital canggih, ruang terbuka untuk brainstorming,
+                serta fasilitas teknologi terkini.
+              </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="bg-blue-100 py-24">
+      <div
+        class="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-2 gap-12 items-center"
+      >
+        <div class="relative flex justify-center md:justify-start">
+          <img
+            src="images/smart.png"
+            alt="Tambak Udang"
+            class="rounded-3xl shadow-2xl w-full md:w-[95%] h-full object-cover hover:scale-105 transition-transform duration-700 ease-in-out"
+          />
+          <div
+            class="absolute -bottom-6 -left-6 w-40 h-40 bg-cyan-200 rounded-full blur-3xl opacity-30 hidden md:block"
+          ></div>
+        </div>
+        <div class="flex flex-col justify-between space-y-6">
+          <div>
+            <h3
+              class="text-4xl md:text-5xl font-extrabold mb-6 text-gray-900 border-l-4 border-cyan-600 pl-5"
+            >
+              Tentang Kami
+            </h3>
+            <div class="space-y-5 text-gray-700 leading-relaxed text-justify">
+                <p>
+                    <b>PT. Smart Tech Indonesia</b> berdiri untuk menghadirkan solusi digital
+                    inovatif yang membantu bisnis dan masyarakat beradaptasi dengan
+                    perkembangan teknologi. Berbasis di <b>Jawa Barat, Indonesia</b>, kami
+                    berkembang menjadi salah satu perusahaan teknologi terkemuka di
+                    kawasan Asia Tenggara.
+                  </p>
+                  <p>
+                    Perusahaan kami membuka lapangan kerja di sektor teknologi,
+                    melatih talenta lokal, dan menyediakan solusi digital yang aman
+                    serta efisien.
+                  </p>
+                  <p>
+                    PT. Smart Tech Indonesia juga berkomitmen pada pengembangan
+                    teknologi hijau dan program tanggung jawab sosial untuk
+                    memberdayakan masyarakat sekitar.
+                  </p>
+            </div>
+          </div>
+            </div> 
+          </div> 
+        </div> 
+      </div> 
+    </section> 
+
+    <!-- CONTACT -->
+    <section id="contact" class="py-20 bg-white">
+      <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12">
+        <div>
+          <h3
+            class="text-3xl font-bold mb-8 text-gray-900 text-center md:text-left"
+          >
+            Hubungi Kami
+          </h3>
+          <form class="space-y-5 bg-gray-50 p-6 rounded-lg shadow-lg">
+            <input
+              type="text"
+              placeholder="Nama"
+              class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-cyan-500"
+            />
+            <input
+              type="email"
+              placeholder="Email"
+              class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-cyan-500"
+            />
+            <textarea
+              rows="3"
+              placeholder="Pesan"
+              class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-cyan-500"
+            ></textarea>
+            <button
+              type="submit"
+              class="w-full bg-cyan-700 text-white py-2 rounded-md hover:bg-cyan-800 transition"
+            >
+              Kirim Pesan
+            </button>
+          </form>
+        </div>
+
+        <!-- PETA -->
+        <div class="flex flex-col items-center justify-center">
+          <h3 class="text-3xl font-bold mb-4 text-gray-900">Lokasi</h3>
+          <p class="text-gray-600 mb-6 text-center">
+            Lippo Cikarang, Kawasan Industri Delta Silicon 3, Jl. Johar No.8D, Cicau, Kec. Cikarang Pusat, Kabupaten Bekasi, Jawa Barat 17530
+</p>
+          <div class="w-full h-80 rounded-lg overflow-hidden shadow-lg">
+            <div class="w-full h-80 rounded-lg overflow-hidden shadow-lg">
+                <iframe 
+                  class="w-full h-full border-0 rounded-lg"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2032869.3965060671!2d104.85554488158283!3d-5.6481326129983955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6a1d29e011fb83%3A0x8cb7c4a11e953770!2sPT%20Smart%20Tech%20Solution%20International!5e0!3m2!1sid!2sid!4v1762881239889!5m2!1sid!2sid" 
+                  allowfullscreen="" 
+                  loading="lazy" 
+                  referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+              </div>              
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+<footer class="bg-cyan-900 text-gray-100 py-8">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+  
+      <!-- Copyright -->
+      <div class="text-center md:text-left">
+        <h3 class="text-lg font-semibold text-white">Newus Technology</h3>
+        <p class="text-sm text-gray-300">
+            © 2025 PT. Smart Tech Indonesia. All rights reserved.<br>
+            Lippo Cikarang, Kawasan Industri Delta Silicon 3, Jl. Johar No.8D, Cicau, Kec. Cikarang Pusat, Kabupaten Bekasi, Jawa Barat 17530
+          </p>
+      </div>
+  
+      <!-- Social Media Links -->
+      <div class="flex space-x-6">
+        <!-- Instagram -->
+        <a 
+          href="https://www.instagram.com/" 
+          target="_blank" 
+          class="hover:text-cyan-300 transition"
+          aria-label="Instagram"
+        >
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7zm5.75-.25a.75.75 0 1 1 0 1.5.75.75 0 0 1 0-1.5z"/>
+          </svg>
+        </a>
+  
+        <!-- Facebook -->
+        <a 
+          href="https://www.facebook.com/" 
+          target="_blank" 
+          class="hover:text-cyan-300 transition"
+          aria-label="Facebook"
+        >
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M22 12a10 10 0 1 0-11.5 9.95v-7.04H8v-2.9h2.5V9.75c0-2.46 1.47-3.82 3.72-3.82 1.08 0 2.21.19 2.21.19v2.43h-1.25c-1.23 0-1.62.76-1.62 1.54v1.86H17l-.4 2.9h-2.32V22A10 10 0 0 0 22 12Z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  
+    <!-- Garis bawah -->
+    <div class="border-t border-cyan-700 mt-6 pt-4 text-center text-sm text-gray-400">
+      Dibuat dengan menggunakan Tailwind CSS
+    </div>
+  </footer>  
+  </body>
+</html>
